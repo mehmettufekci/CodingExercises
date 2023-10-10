@@ -7,6 +7,6 @@ using ConsoleForCoding.TakeCenturyFromYear;
 
 Palindrome palindrome = new();
 
-string inputString = "";
+string inputString = "abac";
 
 Console.Write("This string: " + inputString + " plaindrome status: " + palindrome.CheckPalindrome(inputString));

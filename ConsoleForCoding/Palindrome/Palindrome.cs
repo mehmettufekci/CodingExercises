@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace ConsoleForCoding.Palindrome;
 
@@ -10,9 +11,7 @@ public class Palindrome
 {
     public bool CheckPalindrome(string inputString)
     {
-        int diziLength = (inputString.Length / 2);
-        bool sonuc = false;
-
+        bool sonuc;
         if (string.IsNullOrEmpty(inputString))
         {
             sonuc = false;
@@ -20,27 +19,18 @@ public class Palindrome
         else
         {
 
-            if (diziLength < 1)
+            if ((inputString.Length / 2) < 1)
             {
                 sonuc = true;
             }
             else
             {
-
-                for (int i = 0; i < diziLength; i++)
+                for (int i = 0; i < inputString.Length / 2; i++)
                 {
-                    for (int j = inputString.Length - 1; j > diziLength; j--)
-                    {
-                        if (inputString[j] == inputString[i])
-                        {
-                            sonuc = true;
-                        }
-                        else
-                        {
-                            sonuc = false;
-                        }
-                    }
+                    if (inputString[i] != inputString[inputString.Length - i - 1])
+                        return false;
                 }
+                return true;
             }
         }
         return sonuc;
