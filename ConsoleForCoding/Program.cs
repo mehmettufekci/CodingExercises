@@ -1,4 +1,5 @@
 ﻿using ConsoleForCoding.AdjacentElementsProduct;
+using ConsoleForCoding.InterestingPolygon;
 using ConsoleForCoding.Palindrome;
 using ConsoleForCoding.TakeCenturyFromYear;
 
@@ -13,7 +14,11 @@ using ConsoleForCoding.TakeCenturyFromYear;
 //Console.Write("This string: " + inputString + " plaindrome status: " + palindrome.CheckPalindrome(inputString));
 
 //Adjacent Elements Product tests
+//AdjacentElementsProduct adjacentElements = new();
+//int[] inputArray = { -23, 4, -3, 8, -12 };
+//Console.Write("Adjacent Elements Product is: " + adjacentElements.GetAdjacentElementLargestProduct(inputArray));
 
-AdjacentElementsProduct adjacentElements = new();
-int[] inputArray = { -23, 4, -3, 8, -12 };
-Console.Write("Adjacent Elements Product is: " + adjacentElements.GetAdjacentElementLargestProduct(inputArray));
+//Get Area of the Interesting Polygon
+InterestingPolygon polygon = new();
+int n = 3;
+Console.Write("The are of the n: " + n.ToString() + " interesting polygon is: " + polygon.GetInterestingPolygonArea(n).ToString());
