@@ -26,5 +26,5 @@ using ConsoleForCoding.TakeCenturyFromYear;
 
 //Finding the Consecutive Array elements
 ConsecutiveArray consecutiveArray  = new();
-int[] statues = { 6, 3 };
+int[] statues = { 6, 2, 3, 8 };
 Console.Write("Missing elements number of the Consecutive Array is: " + consecutiveArray.GetMissingElementsNumberOfConsecutiveArray(statues));
