@@ -1,4 +1,5 @@
 ﻿using ConsoleForCoding.AdjacentElementsProduct;
+using ConsoleForCoding.ConsecutiveArray;
 using ConsoleForCoding.InterestingPolygon;
 using ConsoleForCoding.Palindrome;
 using ConsoleForCoding.TakeCenturyFromYear;
@@ -19,6 +20,11 @@ using ConsoleForCoding.TakeCenturyFromYear;
 //Console.Write("Adjacent Elements Product is: " + adjacentElements.GetAdjacentElementLargestProduct(inputArray));
 
 //Get Area of the Interesting Polygon
-InterestingPolygon polygon = new();
-int n = 3;
-Console.Write("The are of the n: " + n.ToString() + " interesting polygon is: " + polygon.GetInterestingPolygonArea(n).ToString());
+//InterestingPolygon polygon = new();
+//int n = 3;
+//Console.Write("The are of the n: " + n.ToString() + " interesting polygon is: " + polygon.GetInterestingPolygonArea(n).ToString());
+
+//Finding the Consecutive Array elements
+ConsecutiveArray consecutiveArray  = new();
+int[] statues = { 6, 3 };
+Console.Write("Missing elements number of the Consecutive Array is: " + consecutiveArray.GetMissingElementsNumberOfConsecutiveArray(statues));
