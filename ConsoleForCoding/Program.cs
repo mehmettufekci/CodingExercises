@@ -1,4 +1,5 @@
 ﻿using ConsoleForCoding.AdjacentElementsProduct;
+using ConsoleForCoding.AlmostIncreasingSequence;
 using ConsoleForCoding.ConsecutiveArray;
 using ConsoleForCoding.InterestingPolygon;
 using ConsoleForCoding.Palindrome;
@@ -25,6 +26,11 @@ using ConsoleForCoding.TakeCenturyFromYear;
 //Console.Write("The are of the n: " + n.ToString() + " interesting polygon is: " + polygon.GetInterestingPolygonArea(n).ToString());
 
 //Finding the Consecutive Array elements
-ConsecutiveArray consecutiveArray  = new();
-int[] statues = { 6, 2, 3, 8 };
-Console.Write("Missing elements number of the Consecutive Array is: " + consecutiveArray.GetMissingElementsNumberOfConsecutiveArray(statues));
+//ConsecutiveArray consecutiveArray  = new();
+//int[] statues = { 6, 2, 3, 8 };
+//Console.Write("Missing elements number of the Consecutive Array is: " + consecutiveArray.GetMissingElementsNumberOfConsecutiveArray(statues));
+
+//Finding the AlmostIncreasingSequence
+AlmostIncreasingSequence almostIncreasingSequence  = new();
+int[] sequnce = { 0, -2, 5, 6 };
+Console.Write("The sequence Almost Increasing Sequence status is: " + almostIncreasingSequence.IsAlmostIncreasingSequence(sequnce));
