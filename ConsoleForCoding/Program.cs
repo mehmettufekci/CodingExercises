@@ -2,8 +2,10 @@
 using ConsoleForCoding.AlmostIncreasingSequence;
 using ConsoleForCoding.ConsecutiveArray;
 using ConsoleForCoding.InterestingPolygon;
+using ConsoleForCoding.MatrixElementsSum;
 using ConsoleForCoding.Palindrome;
 using ConsoleForCoding.TakeCenturyFromYear;
+using ConsoleForCoding.TwoSum;
 
 //Centruy From Year tests
 //CenturyFromYear ins = new();
@@ -31,6 +33,20 @@ using ConsoleForCoding.TakeCenturyFromYear;
 //Console.Write("Missing elements number of the Consecutive Array is: " + consecutiveArray.GetMissingElementsNumberOfConsecutiveArray(statues));
 
 //Finding the AlmostIncreasingSequence
-AlmostIncreasingSequence almostIncreasingSequence  = new();
-int[] sequnce = { 0, -2, 5, 6 };
-Console.Write("The sequence Almost Increasing Sequence status is: " + almostIncreasingSequence.IsAlmostIncreasingSequence(sequnce));
+//AlmostIncreasingSequence almostIncreasingSequence  = new();
+//int[] sequnce = { 0, -2, 5, 6 };
+//Console.Write("The sequence Almost Increasing Sequence status is: " + almostIncreasingSequence.IsAlmostIncreasingSequence(sequnce));
+
+//Finding the Two Sum of the array for target
+TwoSum twoSum = new();
+int[] nums = { 1, 3, 4, 2 };
+int target = 6;
+int[] result = twoSum.GetTwoSum(nums, target);
+Console.Write("Target: " + target.ToString() + " for two sum of the array elements are: [" + result[0].ToString() + "," + result[1].ToString() + "]");
+
+//Finding the MatrixElementsSum
+//MatrixElementsSum matrixElementsSum = new();
+//int[] matrix = {[0, 1, 1, 2],
+//          [0, 5, 0, 0],
+//          [2, 0, 3, 3]};
+//Console.Write("The sequence Almost Increasing Sequence status is: " + almostIncreasingSequence.IsAlmostIncreasingSequence(sequnce));
