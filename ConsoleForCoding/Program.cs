@@ -3,6 +3,7 @@ using ConsoleForCoding.AlmostIncreasingSequence;
 using ConsoleForCoding.ArcadeGame;
 using ConsoleForCoding.ConsecutiveArray;
 using ConsoleForCoding.InterestingPolygon;
+using ConsoleForCoding.LongestString;
 using ConsoleForCoding.MatrixElementsSum;
 using ConsoleForCoding.Palindrome;
 using ConsoleForCoding.TakeCenturyFromYear;
@@ -50,13 +51,13 @@ using System.Diagnostics.Metrics;
 //After becoming famous, the CodeBots decided to move into a new building together.Each of the rooms has a different cost, and some of them are free, but there's a rumour that all the free rooms are haunted! Since the CodeBots are quite superstitious, they refuse to stay in any of the free rooms, or any of the rooms below any of the free rooms.
 
 //Given matrix, a rectangular matrix of integers, where each value represents the cost of the room, your task is to return the total sum of all rooms that are suitable for the CodeBots (ie: add up all the values that don't appear below a 0).
-MatrixElementsSum matrixElementsSum = new();
-int[][] matrix = {
-                    new int[]{ 1,1,1,0 },
-                    new int[]{ 0,5,0,1 },
-                    new int[]{ 2, 1, 3, 10 }
-                };
-Console.Write("The matrix elements of the sum is: " + matrixElementsSum.GetMatrixElementsSum(matrix));
+//MatrixElementsSum matrixElementsSum = new();
+//int[][] matrix = {
+//                    new int[]{ 1,1,1,0 },
+//                    new int[]{ 0,5,0,1 },
+//                    new int[]{ 2, 1, 3, 10 }
+//                };
+//Console.Write("The matrix elements of the sum is: " + matrixElementsSum.GetMatrixElementsSum(matrix));
 
 
 //An arcade game player wants to climb to the top of the leaderboard and track their ranking. The game uses Dense Ranking, so its leaderboard works like this:
@@ -74,4 +75,19 @@ Console.Write("The matrix elements of the sum is: " + matrixElementsSum.GetMatri
 //List<int> result = ArcadeGame.ClimbingLeaderboard(ranked, player);
 
 //Console.WriteLine(String.Join("\n", result));
+
+//Given an array of strings, return another array containing all of its longest strings.
+LongestString longestString = new();
+string[] inputString = new string[] { "a",
+ "abc",
+ "cbd",
+ "zzzzzz",
+ "a",
+ "abcdef",
+ "asasa",
+ "aaaaaa" };
+string[] outputString = longestString.GetLongestStringsOfArray(inputString);
+Console.Write("The longest strings of the array is: " + string.Join("\n", outputString));
+
+
 
