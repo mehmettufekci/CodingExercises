@@ -1,6 +1,7 @@
 ﻿using ConsoleForCoding.AdjacentElementsProduct;
 using ConsoleForCoding.AlmostIncreasingSequence;
 using ConsoleForCoding.ArcadeGame;
+using ConsoleForCoding.CommonCharacterCount;
 using ConsoleForCoding.ConsecutiveArray;
 using ConsoleForCoding.InterestingPolygon;
 using ConsoleForCoding.LongestString;
@@ -77,17 +78,21 @@ using System.Diagnostics.Metrics;
 //Console.WriteLine(String.Join("\n", result));
 
 //Given an array of strings, return another array containing all of its longest strings.
-LongestString longestString = new();
-string[] inputString = new string[] { "a",
- "abc",
- "cbd",
- "zzzzzz",
- "a",
- "abcdef",
- "asasa",
- "aaaaaa" };
-string[] outputString = longestString.GetLongestStringsOfArray(inputString);
-Console.Write("The longest strings of the array is: " + string.Join("\n", outputString));
+//LongestString longestString = new();
+//string[] inputString = new string[] { "a",
+// "abc",
+// "cbd",
+// "zzzzzz",
+// "a",
+// "abcdef",
+// "asasa",
+// "aaaaaa" };
+//string[] outputString = longestString.GetLongestStringsOfArray(inputString);
+//Console.Write("The longest strings of the array is: " + string.Join("\n", outputString));
 
-
+// Given two strings, find the number of common characters between them.
+string s1 = "a";
+string s2 = "aaa";
+CommonCharacterCount commonCharacterCount = new();
+Console.Write("Common character count is: " + commonCharacterCount.GetCommonCharacterCount(s1, s2));
 
