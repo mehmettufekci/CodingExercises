@@ -4,12 +4,14 @@ using ConsoleForCoding.ArcadeGame;
 using ConsoleForCoding.CommonCharacterCount;
 using ConsoleForCoding.ConsecutiveArray;
 using ConsoleForCoding.InterestingPolygon;
+using ConsoleForCoding.IsLucky;
 using ConsoleForCoding.LongestString;
 using ConsoleForCoding.MatrixElementsSum;
 using ConsoleForCoding.Palindrome;
 using ConsoleForCoding.TakeCenturyFromYear;
 using ConsoleForCoding.TwoSum;
 using System.Diagnostics.Metrics;
+using System.Net.Sockets;
 
 //Centruy From Year tests
 //CenturyFromYear ins = new();
@@ -91,8 +93,12 @@ using System.Diagnostics.Metrics;
 //Console.Write("The longest strings of the array is: " + string.Join("\n", outputString));
 
 // Given two strings, find the number of common characters between them.
-string s1 = "a";
-string s2 = "aaa";
-CommonCharacterCount commonCharacterCount = new();
-Console.Write("Common character count is: " + commonCharacterCount.GetCommonCharacterCount(s1, s2));
+//string s1 = "a";
+//string s2 = "aaa";
+//CommonCharacterCount commonCharacterCount = new();
+//Console.Write("Common character count is: " + commonCharacterCount.GetCommonCharacterCount(s1, s2));
 
+//Ticket numbers usually consist of an even number of digits. A ticket number is considered lucky if the sum of the first half of the digits is equal to the sum of the second half.
+IsLucky lucky = new();
+int n = 134008;
+Console.Write("The ticket number lucky state is: " + lucky.GetIsLucky(n));
