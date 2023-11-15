@@ -8,6 +8,7 @@ using ConsoleForCoding.IsLucky;
 using ConsoleForCoding.LongestString;
 using ConsoleForCoding.MatrixElementsSum;
 using ConsoleForCoding.Palindrome;
+using ConsoleForCoding.SortByHeight;
 using ConsoleForCoding.TakeCenturyFromYear;
 using ConsoleForCoding.TwoSum;
 using System.Diagnostics.Metrics;
@@ -99,6 +100,11 @@ using System.Net.Sockets;
 //Console.Write("Common character count is: " + commonCharacterCount.GetCommonCharacterCount(s1, s2));
 
 //Ticket numbers usually consist of an even number of digits. A ticket number is considered lucky if the sum of the first half of the digits is equal to the sum of the second half.
-IsLucky lucky = new();
-int n = 134008;
-Console.Write("The ticket number lucky state is: " + lucky.GetIsLucky(n));
+//IsLucky lucky = new();
+//int n = 134008;
+//Console.Write("The ticket number lucky state is: " + lucky.GetIsLucky(n));
+
+//Some people are standing in a row in a park. There are trees between them which cannot be moved. Your task is to rearrange the people by their heights in a non-descending order without moving the trees. People can be very tall!
+SortByHeight sortByHeight = new();
+int[] a = { -1, 150, 190, 170, -1, -1, 160, 180 };
+Console.Write("The rearranged the people by their heights are: [" + string.Join(", ", sortByHeight.GetSortByHeight(a)));
