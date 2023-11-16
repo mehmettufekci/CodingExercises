@@ -8,9 +8,11 @@ using ConsoleForCoding.IsLucky;
 using ConsoleForCoding.LongestString;
 using ConsoleForCoding.MatrixElementsSum;
 using ConsoleForCoding.Palindrome;
+using ConsoleForCoding.ReverseInParentheses;
 using ConsoleForCoding.SortByHeight;
 using ConsoleForCoding.TakeCenturyFromYear;
 using ConsoleForCoding.TwoSum;
+using System.ComponentModel;
 using System.Diagnostics.Metrics;
 using System.Net.Sockets;
 
@@ -105,6 +107,11 @@ using System.Net.Sockets;
 //Console.Write("The ticket number lucky state is: " + lucky.GetIsLucky(n));
 
 //Some people are standing in a row in a park. There are trees between them which cannot be moved. Your task is to rearrange the people by their heights in a non-descending order without moving the trees. People can be very tall!
-SortByHeight sortByHeight = new();
-int[] a = { -1, 150, 190, 170, -1, -1, 160, 180 };
-Console.Write("The rearranged the people by their heights are: [" + string.Join(", ", sortByHeight.GetSortByHeight(a)));
+//SortByHeight sortByHeight = new();
+//int[] a = { -1, 150, 190, 170, -1, -1, 160, 180 };
+//Console.Write("The rearranged the people by their heights are: [" + string.Join(", ", sortByHeight.GetSortByHeight(a)));
+
+//Write a function that reverses characters in (possibly nested) parentheses in the input string.
+ReverseInParentheses reverseInParentheses = new ReverseInParentheses();
+string inputString = "foo(bar(baz))blim";
+Console.Write("This string: " + inputString + " of reverse in parentheses is: " + reverseInParentheses.GetReverseInParentheses(inputString));
