@@ -1,5 +1,6 @@
 ﻿using ConsoleForCoding.AdjacentElementsProduct;
 using ConsoleForCoding.AlmostIncreasingSequence;
+using ConsoleForCoding.AlternatingSum;
 using ConsoleForCoding.ArcadeGame;
 using ConsoleForCoding.CommonCharacterCount;
 using ConsoleForCoding.ConsecutiveArray;
@@ -112,6 +113,14 @@ using System.Net.Sockets;
 //Console.Write("The rearranged the people by their heights are: [" + string.Join(", ", sortByHeight.GetSortByHeight(a)));
 
 //Write a function that reverses characters in (possibly nested) parentheses in the input string.
-ReverseInParentheses reverseInParentheses = new ReverseInParentheses();
-string inputString = "foo(bar(baz))blim";
-Console.Write("This string: " + inputString + " of reverse in parentheses is: " + reverseInParentheses.GetReverseInParentheses(inputString));
+//ReverseInParentheses reverseInParentheses = new ReverseInParentheses();
+//string inputString = "foo(bar(baz))blim";
+//Console.Write("This string: " + inputString + " of reverse in parentheses is: " + reverseInParentheses.GetReverseInParentheses(inputString));
+
+
+//Several people are standing in a row and need to be divided into two teams. The first person goes into team 1, the second goes into team 2, the third goes into team 1 again, the fourth into team 2, and so on.
+//You are given an array of positive integers - the weights of the people. Return an array of two integers, where the first element is the total weight of team 1, and the second element is the total weight of team 2 after the division is complete.
+AlternatingSum alternatingSum = new();
+int[] a = { 100, 50 };
+int[] result = alternatingSum.GetAlternatingSum(a);
+Console.Write("Alternating sum of the array elements are: [" + result[0].ToString() + "," + result[1].ToString() + "]");
