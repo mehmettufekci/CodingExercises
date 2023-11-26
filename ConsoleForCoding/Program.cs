@@ -1,4 +1,5 @@
-﻿using ConsoleForCoding.AdjacentElementsProduct;
+﻿using ConsoleForCoding.AddBorder;
+using ConsoleForCoding.AdjacentElementsProduct;
 using ConsoleForCoding.AlmostIncreasingSequence;
 using ConsoleForCoding.AlternatingSum;
 using ConsoleForCoding.ArcadeGame;
@@ -120,7 +121,18 @@ using System.Net.Sockets;
 
 //Several people are standing in a row and need to be divided into two teams. The first person goes into team 1, the second goes into team 2, the third goes into team 1 again, the fourth into team 2, and so on.
 //You are given an array of positive integers - the weights of the people. Return an array of two integers, where the first element is the total weight of team 1, and the second element is the total weight of team 2 after the division is complete.
-AlternatingSum alternatingSum = new();
-int[] a = { 100, 50 };
-int[] result = alternatingSum.GetAlternatingSum(a);
-Console.Write("Alternating sum of the array elements are: [" + result[0].ToString() + "," + result[1].ToString() + "]");
+//AlternatingSum alternatingSum = new();
+//int[] a = { 100, 50 };
+//int[] result = alternatingSum.GetAlternatingSum(a);
+//Console.Write("Alternating sum of the array elements are: [" + result[0].ToString() + "," + result[1].ToString() + "]");
+
+
+//Given a rectangular matrix of characters, add a border of asterisks(*) to it.
+AddBorder addBorder = new();
+string[] picture = new string[] {"abcde",
+ "fghij",
+ "klmno",
+ "pqrst",
+ "uvwxy" };
+string[] outputString = addBorder.GetBordertoPicture(picture);
+Console.Write("The border of the picture is: " + string.Join("\n", outputString));
