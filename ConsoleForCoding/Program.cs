@@ -3,6 +3,7 @@ using ConsoleForCoding.AdjacentElementsProduct;
 using ConsoleForCoding.AlmostIncreasingSequence;
 using ConsoleForCoding.AlternatingSum;
 using ConsoleForCoding.ArcadeGame;
+using ConsoleForCoding.AreSimilar;
 using ConsoleForCoding.CommonCharacterCount;
 using ConsoleForCoding.ConsecutiveArray;
 using ConsoleForCoding.InterestingPolygon;
@@ -128,11 +129,19 @@ using System.Net.Sockets;
 
 
 //Given a rectangular matrix of characters, add a border of asterisks(*) to it.
-AddBorder addBorder = new();
-string[] picture = new string[] {"abcde",
- "fghij",
- "klmno",
- "pqrst",
- "uvwxy" };
-string[] outputString = addBorder.GetBordertoPicture(picture);
-Console.Write("The border of the picture is: " + string.Join("\n", outputString));
+//AddBorder addBorder = new();
+//string[] picture = new string[] {"abcde",
+// "fghij",
+// "klmno",
+// "pqrst",
+// "uvwxy" };
+//string[] outputString = addBorder.GetBordertoPicture(picture);
+//Console.Write("The border of the picture is: " + string.Join("\n", outputString));
+
+
+//Two arrays are called similar if one can be obtained from another by swapping at most one pair of elements in one of the arrays.
+//Given two arrays a and b, check whether they are similar.
+AreSimilar areSimilar = new();
+int[] a = { 832, 998, 148, 570, 533, 561, 894, 147, 455, 279 };
+int[] b = { 832, 570, 148, 998, 533, 561, 455, 147, 894, 279 };
+Console.Write("The similarity of the arrays are: " + areSimilar.ArraysAreSimilar(a,b));
