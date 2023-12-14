@@ -12,6 +12,7 @@ using ConsoleForCoding.IsLucky;
 using ConsoleForCoding.LongestString;
 using ConsoleForCoding.MatrixElementsSum;
 using ConsoleForCoding.Palindrome;
+using ConsoleForCoding.PalindromeRearranging;
 using ConsoleForCoding.ReverseInParentheses;
 using ConsoleForCoding.SortByHeight;
 using ConsoleForCoding.TakeCenturyFromYear;
@@ -148,6 +149,12 @@ using System.Net.Sockets;
 //Console.Write("The similarity of the arrays are: " + areSimilar.ArraysAreSimilar(a,b));
 
 //You are given an array of integers. On each move you are allowed to increase exactly one of its element by one. Find the minimal number of moves required to obtain a strictly increasing sequence from the input.
-ArrayChange arrayChange = new();
-int[] inputArray = { 1,1,1 };
-Console.Write("The minimal number of moves required to obtain a strictly increasing sequence from the input is: " + arrayChange.GetArrayChange(inputArray));
+//ArrayChange arrayChange = new();
+//int[] inputArray = { 1,1,1 };
+//Console.Write("The minimal number of moves required to obtain a strictly increasing sequence from the input is: " + arrayChange.GetArrayChange(inputArray));
+
+
+//Given a string, find out if its characters can be rearranged to form a palindrome.
+PalindromeRearranging palindrome = new();
+string inputString = "abbcabb";
+Console.Write("This string: " + inputString + " plaindrome status: " + palindrome.IsPalindromeRearranging(inputString));
