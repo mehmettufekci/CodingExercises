@@ -5,6 +5,7 @@ using ConsoleForCoding.AlternatingSum;
 using ConsoleForCoding.ArcadeGame;
 using ConsoleForCoding.AreSimilar;
 using ConsoleForCoding.ArrayChange;
+using ConsoleForCoding.CheckEquallyStrong;
 using ConsoleForCoding.CommonCharacterCount;
 using ConsoleForCoding.ConsecutiveArray;
 using ConsoleForCoding.InterestingPolygon;
@@ -155,6 +156,16 @@ using System.Net.Sockets;
 
 
 //Given a string, find out if its characters can be rearranged to form a palindrome.
-PalindromeRearranging palindrome = new();
-string inputString = "abbcabb";
-Console.Write("This string: " + inputString + " plaindrome status: " + palindrome.IsPalindromeRearranging(inputString));
+//PalindromeRearranging palindrome = new();
+//string inputString = "abbcabb";
+//Console.Write("This string: " + inputString + " plaindrome status: " + palindrome.IsPalindromeRearranging(inputString));
+
+//Call two arms equally strong if the heaviest weights they each are able to lift are equal.
+//Call two people equally strong if their strongest arms are equally strong (the strongest arm can be both the right and the left), and so are their weakest arms.
+//Given your and your friend's arms' lifting capabilities find out if you two are equally strong.
+CheckEquallyStrong checkEqually = new();
+int yourLeft= 10;
+int yourRight= 5;
+int friendsLeft= 10;
+int friendsRight= 6;
+Console.Write("The strong equality of you and your friend are: " + checkEqually.AreEquallyStrong(yourLeft, yourRight, friendsLeft, friendsRight));
