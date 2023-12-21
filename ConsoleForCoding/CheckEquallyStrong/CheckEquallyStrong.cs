@@ -15,7 +15,7 @@ public class CheckEquallyStrong
         int yourWeakestArm = 0;
         int friendsWeakestArm = 0;
         int friendsStrongestArm = 0;
-
+         
         if (yourRight >= yourLeft)
         {
             yourStrongestArm = yourRight;

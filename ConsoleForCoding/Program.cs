@@ -12,6 +12,7 @@ using ConsoleForCoding.InterestingPolygon;
 using ConsoleForCoding.IsLucky;
 using ConsoleForCoding.LongestString;
 using ConsoleForCoding.MatrixElementsSum;
+using ConsoleForCoding.MaximalAdjacentDifference;
 using ConsoleForCoding.Palindrome;
 using ConsoleForCoding.PalindromeRearranging;
 using ConsoleForCoding.ReverseInParentheses;
@@ -163,9 +164,14 @@ using System.Net.Sockets;
 //Call two arms equally strong if the heaviest weights they each are able to lift are equal.
 //Call two people equally strong if their strongest arms are equally strong (the strongest arm can be both the right and the left), and so are their weakest arms.
 //Given your and your friend's arms' lifting capabilities find out if you two are equally strong.
-CheckEquallyStrong checkEqually = new();
-int yourLeft= 10;
-int yourRight= 5;
-int friendsLeft= 10;
-int friendsRight= 6;
-Console.Write("The strong equality of you and your friend are: " + checkEqually.AreEquallyStrong(yourLeft, yourRight, friendsLeft, friendsRight));
+//CheckEquallyStrong checkEqually = new();
+//int yourLeft= 10;
+//int yourRight= 5;
+//int friendsLeft= 10;
+//int friendsRight= 6;
+//Console.Write("The strong equality of you and your friend are: " + checkEqually.AreEquallyStrong(yourLeft, yourRight, friendsLeft, friendsRight));
+
+//Given an array of integers, find the maximal absolute difference between any two of its adjacent elements.
+MaximalAdjacentDifference maximalDiff = new();
+int[] inputArray = { -1, 1, -3, -4 };
+Console.Write("The maximal absolute difference between any two of its adjacent elements is: " + maximalDiff.GetMaximalAdjacentDifference(inputArray));
