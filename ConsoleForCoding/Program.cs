@@ -9,6 +9,7 @@ using ConsoleForCoding.CheckEquallyStrong;
 using ConsoleForCoding.CommonCharacterCount;
 using ConsoleForCoding.ConsecutiveArray;
 using ConsoleForCoding.InterestingPolygon;
+using ConsoleForCoding.IPAddress;
 using ConsoleForCoding.IsLucky;
 using ConsoleForCoding.LongestString;
 using ConsoleForCoding.MatrixElementsSum;
@@ -21,6 +22,7 @@ using ConsoleForCoding.TakeCenturyFromYear;
 using ConsoleForCoding.TwoSum;
 using System.ComponentModel;
 using System.Diagnostics.Metrics;
+using System.Net;
 using System.Net.Sockets;
 
 //Centruy From Year tests
@@ -172,6 +174,12 @@ using System.Net.Sockets;
 //Console.Write("The strong equality of you and your friend are: " + checkEqually.AreEquallyStrong(yourLeft, yourRight, friendsLeft, friendsRight));
 
 //Given an array of integers, find the maximal absolute difference between any two of its adjacent elements.
-MaximalAdjacentDifference maximalDiff = new();
-int[] inputArray = { -1, 1, -3, -4 };
-Console.Write("The maximal absolute difference between any two of its adjacent elements is: " + maximalDiff.GetMaximalAdjacentDifference(inputArray));
+//MaximalAdjacentDifference maximalDiff = new();
+//int[] inputArray = { -1, 1, -3, -4 };
+//Console.Write("The maximal absolute difference between any two of its adjacent elements is: " + maximalDiff.GetMaximalAdjacentDifference(inputArray));
+
+//An IP address is a numerical label assigned to each device (e.g., computer, printer) participating in a computer network that uses the Internet Protocol for communication. There are two versions of the Internet protocol, and thus two versions of addresses. One of them is the IPv4 address.
+//Given a string, find out if it satisfies the IPv4 address naming rules.
+CheckIPAddress checkIPAddress = new();
+string inputString = "01.233.161.131";
+Console.Write("The ip address: " + inputString + "naming rule is: " + checkIPAddress.isIPv4Address(inputString));
