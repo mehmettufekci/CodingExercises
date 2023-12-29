@@ -5,6 +5,7 @@ using ConsoleForCoding.AlternatingSum;
 using ConsoleForCoding.ArcadeGame;
 using ConsoleForCoding.AreSimilar;
 using ConsoleForCoding.ArrayChange;
+using ConsoleForCoding.AvoidObstacles;
 using ConsoleForCoding.CheckEquallyStrong;
 using ConsoleForCoding.CommonCharacterCount;
 using ConsoleForCoding.ConsecutiveArray;
@@ -180,6 +181,13 @@ using System.Net.Sockets;
 
 //An IP address is a numerical label assigned to each device (e.g., computer, printer) participating in a computer network that uses the Internet Protocol for communication. There are two versions of the Internet protocol, and thus two versions of addresses. One of them is the IPv4 address.
 //Given a string, find out if it satisfies the IPv4 address naming rules.
-CheckIPAddress checkIPAddress = new();
-string inputString = "01.233.161.131";
-Console.Write("The ip address: " + inputString + "naming rule is: " + checkIPAddress.isIPv4Address(inputString));
+//CheckIPAddress checkIPAddress = new();
+//string inputString = "01.233.161.131";
+//Console.Write("The ip address: " + inputString + "naming rule is: " + checkIPAddress.isIPv4Address(inputString));
+
+//You are given an array of integers representing coordinates of obstacles situated on a straight line.
+//Assume that you are jumping from the point with coordinate 0 to the right. You are allowed only to make jumps of the same length represented by some integer.
+//Find the minimal length of the jump enough to avoid all the obstacles.
+AvoidObstacles avoidObstacles = new();
+int[] inputArray = { 5, 8, 9, 13, 14 };
+Console.Write("The minimal length of the jump enough to avoid all the obstacles is: " + avoidObstacles.GetJumpLength(inputArray));
